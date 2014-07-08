@@ -20,7 +20,7 @@ angular.module("boomCal")
         getList($routeParams.id);
 
         $scope.doneToggle = function(item) {
-            if (item.done) {
+            if (item.done == true) {
                 item.done = false;
             } else {
                 item.done = true;
@@ -38,7 +38,7 @@ angular.module("boomCal")
         };
 
         $scope.shouldBeHidden = function(item) {
-            if ($scope.hideDone && item.done) {
+            if ($scope.hideDone && item.done == true) {
                 return true;
             }
         };
@@ -92,6 +92,10 @@ angular.module("boomCal")
                     $location.path('/');
                 });
         };
+
+		$scope.editList = function(id) {
+			$location.path('lists/edit/' + id);
+		};
 
 
     });

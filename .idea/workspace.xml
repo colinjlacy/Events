@@ -35,7 +35,7 @@
       <file leaf-file-name="create_list.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/create_list.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="498" selection-end="498" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="345">
+            <state line="16" column="0" selection-start="498" selection-end="498" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="345">
               <folding />
             </state>
           </provider>
@@ -44,25 +44,22 @@
       <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/classes/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="837" selection-end="837" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="795">
-              <folding>
-                <marker date="1404844660000" expanded="true" signature="319:367" placeholder="SELECT * FRO..Users..." />
-                <marker date="1404844660000" expanded="true" signature="768:834" placeholder="INSERT INTO ..." />
-              </folding>
+            <state line="30" column="0" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="870">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Lists.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Lists.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/classes/Lists.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="133" column="52" selection-start="3622" selection-end="3622" vertical-scroll-proportion="-58.75" vertical-offset="510" max-vertical-offset="2415">
+            <state line="156" column="87" selection-start="4225" selection-end="4225" vertical-scroll-proportion="0.42307693" vertical-offset="1924" max-vertical-offset="2760">
               <folding>
-                <marker date="1404844660000" expanded="true" signature="297:345" placeholder="SELECT * FRO..Lists..." />
-                <marker date="1404844660000" expanded="true" signature="1248:1299" placeholder="SELECT * FRO..List_Items..." />
-                <marker date="1404844660000" expanded="true" signature="2353:2442" placeholder="INSERT INTO ..." />
-                <marker date="1404844660000" expanded="true" signature="2539:2605" placeholder="INSERT INTO ..." />
-                <marker date="1404844660000" expanded="true" signature="3168:3213" placeholder="INSERT INTO ..." />
+                <marker date="1404854764000" expanded="true" signature="297:345" placeholder="SELECT * FRO..Lists..." />
+                <marker date="1404854764000" expanded="true" signature="1248:1299" placeholder="SELECT * FRO..List_Items..." />
+                <marker date="1404854764000" expanded="true" signature="2353:2442" placeholder="INSERT INTO ..." />
+                <marker date="1404854764000" expanded="true" signature="2539:2605" placeholder="INSERT INTO ..." />
+                <marker date="1404854764000" expanded="true" signature="3602:3653" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -71,7 +68,7 @@
       <file leaf-file-name="Data.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/classes/Data.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="5" selection-start="744" selection-end="744" vertical-scroll-proportion="-17.333334" vertical-offset="94" max-vertical-offset="900">
+            <state line="39" column="5" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="975">
               <folding />
             </state>
           </provider>
@@ -80,7 +77,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="11" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="615">
+            <state line="26" column="11" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="660">
               <folding />
             </state>
           </provider>
@@ -89,16 +86,16 @@
       <file leaf-file-name="retrieve_lists.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/retrieve_lists.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="12" selection-start="224" selection-end="224" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="255">
+            <state line="11" column="12" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="retrieve_list_items.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="retrieve_list_items.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/retrieve_list_items.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="12" selection-start="222" selection-end="222" vertical-scroll-proportion="0.20471464" vertical-offset="0" max-vertical-offset="806">
+            <state line="11" column="12" selection-start="222" selection-end="222" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
@@ -142,8 +139,8 @@
         <option value="$PROJECT_DIR$/server/create_list.php" />
         <option value="$PROJECT_DIR$/server/classes/User.php" />
         <option value="$PROJECT_DIR$/server/classes/Data.php" />
-        <option value="$PROJECT_DIR$/server/classes/Lists.php" />
         <option value="$PROJECT_DIR$/server/retrieve_list_items.php" />
+        <option value="$PROJECT_DIR$/server/classes/Lists.php" />
       </list>
     </option>
   </component>
@@ -236,56 +233,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="soundcloud" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="events" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="soundcloud" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="events" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="calendar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="soundcloud" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="events" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -333,6 +280,10 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <browser start="false" url="" with-js-debugger="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="GoTestConfiguration" factoryName="Go Test">
       <option name="name" value="Go Test" />
       <option name="saveOutputToFile" value="false" />
@@ -352,10 +303,6 @@
       <option name="testBeforeBenchmark" value="false" />
       <option name="goVetEnabled" value="false" />
       <module name="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
-      <browser start="false" url="" with-js-debugger="false" />
       <method />
     </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="4308dfe1-d94a-46e3-86e0-1c1f25ac9756" server_name="LocalHost">
@@ -384,7 +331,6 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32867134" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -396,6 +342,7 @@
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15679677" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32867134" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -415,11 +362,85 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/plugins.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+        <state line="56" column="10" selection-start="2234" selection-end="2234" vertical-scroll-proportion="0.0" vertical-offset="379" max-vertical-offset="1530">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/create_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="498" selection-end="498" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/classes/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/classes/Lists.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="133" column="52" selection-start="3622" selection-end="3622" vertical-scroll-proportion="0.0" vertical-offset="1995" max-vertical-offset="2490">
+          <folding>
+            <marker date="1404854764000" expanded="true" signature="297:345" placeholder="SELECT * FRO..Lists..." />
+            <marker date="1404854764000" expanded="true" signature="1248:1299" placeholder="SELECT * FRO..List_Items..." />
+            <marker date="1404854764000" expanded="true" signature="2353:2442" placeholder="INSERT INTO ..." />
+            <marker date="1404854764000" expanded="true" signature="2539:2605" placeholder="INSERT INTO ..." />
+            <marker date="1404854764000" expanded="true" signature="3602:3653" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/classes/Data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="5" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="11" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/retrieve_lists.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="12" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/retrieve_list_items.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="12" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/calendar/boomControl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2400">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/set_user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="92" selection-end="221" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/plugins.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -439,10 +460,7 @@
     <entry file="file://$PROJECT_DIR$/server/classes/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="51" selection-start="537" selection-end="572" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="870">
-          <folding>
-            <marker date="1404844660000" expanded="true" signature="319:367" placeholder="SELECT * FRO..Users..." />
-            <marker date="1404844660000" expanded="true" signature="768:834" placeholder="INSERT INTO ..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -450,11 +468,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="109" column="54" selection-start="2889" selection-end="2889" vertical-scroll-proportion="0.0" vertical-offset="1635" max-vertical-offset="2310">
           <folding>
-            <marker date="1404844660000" expanded="true" signature="297:345" placeholder="SELECT * FRO..Lists..." />
-            <marker date="1404844660000" expanded="true" signature="1248:1299" placeholder="SELECT * FRO..List_Items..." />
-            <marker date="1404844660000" expanded="true" signature="2353:2442" placeholder="INSERT INTO ..." />
-            <marker date="1404844660000" expanded="true" signature="2539:2605" placeholder="INSERT INTO ..." />
-            <marker date="1404844660000" expanded="true" signature="3168:3213" placeholder="INSERT INTO ..." />
+            <marker date="1404854764000" expanded="true" signature="297:345" placeholder="SELECT * FRO..Lists..." />
+            <marker date="1404854764000" expanded="true" signature="1248:1299" placeholder="SELECT * FRO..List_Items..." />
+            <marker date="1404854764000" expanded="true" signature="2353:2442" placeholder="INSERT INTO ..." />
+            <marker date="1404854764000" expanded="true" signature="2539:2605" placeholder="INSERT INTO ..." />
+            <marker date="1404854764000" expanded="true" signature="3602:3653" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -489,9 +507,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/plugins.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -511,10 +527,7 @@
     <entry file="file://$PROJECT_DIR$/server/classes/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="51" selection-start="537" selection-end="572" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="870">
-          <folding>
-            <marker date="1404844660000" expanded="true" signature="319:367" placeholder="SELECT * FRO..Users..." />
-            <marker date="1404844660000" expanded="true" signature="768:834" placeholder="INSERT INTO ..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -522,11 +535,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="129" column="33" selection-start="3488" selection-end="3488" vertical-scroll-proportion="0.0" vertical-offset="1935" max-vertical-offset="2310">
           <folding>
-            <marker date="1404844660000" expanded="true" signature="297:345" placeholder="SELECT * FRO..Lists..." />
-            <marker date="1404844660000" expanded="true" signature="1248:1299" placeholder="SELECT * FRO..List_Items..." />
-            <marker date="1404844660000" expanded="true" signature="2353:2442" placeholder="INSERT INTO ..." />
-            <marker date="1404844660000" expanded="true" signature="2539:2605" placeholder="INSERT INTO ..." />
-            <marker date="1404844660000" expanded="true" signature="3168:3213" placeholder="INSERT INTO ..." />
+            <marker date="1404854764000" expanded="true" signature="297:345" placeholder="SELECT * FRO..Lists..." />
+            <marker date="1404854764000" expanded="true" signature="1248:1299" placeholder="SELECT * FRO..List_Items..." />
+            <marker date="1404854764000" expanded="true" signature="2353:2442" placeholder="INSERT INTO ..." />
+            <marker date="1404854764000" expanded="true" signature="2539:2605" placeholder="INSERT INTO ..." />
+            <marker date="1404854764000" expanded="true" signature="3602:3653" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -561,9 +574,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/plugins.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -575,9 +586,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/plugins.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -589,9 +598,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/plugins.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -603,9 +610,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/plugins.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -617,9 +622,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/plugins.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="830">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="830" />
       </provider>
     </entry>
     <entry file="uml://DATABASE/705ee7c0-3f80-4e99-b123-beb01fa7386f">
@@ -642,7 +645,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="11" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="615">
+        <state line="26" column="11" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="660">
           <folding />
         </state>
       </provider>
@@ -670,52 +673,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/create_list.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="498" selection-end="498" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="345">
+        <state line="16" column="0" selection-start="498" selection-end="498" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="345">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/classes/Data.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="5" selection-start="744" selection-end="744" vertical-scroll-proportion="-17.333334" vertical-offset="94" max-vertical-offset="900">
+        <state line="39" column="5" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="975">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/classes/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="837" selection-end="837" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="795">
-          <folding>
-            <marker date="1404844660000" expanded="true" signature="319:367" placeholder="SELECT * FRO..Users..." />
-            <marker date="1404844660000" expanded="true" signature="768:834" placeholder="INSERT INTO ..." />
-          </folding>
+        <state line="30" column="0" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="870">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/retrieve_lists.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="12" selection-start="224" selection-end="224" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="255">
+        <state line="11" column="12" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/retrieve_list_items.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="12" selection-start="222" selection-end="222" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="255">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/classes/Lists.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="52" selection-start="3622" selection-end="3622" vertical-scroll-proportion="-58.75" vertical-offset="510" max-vertical-offset="2415">
+        <state line="156" column="87" selection-start="4225" selection-end="4225" vertical-scroll-proportion="0.42307693" vertical-offset="1924" max-vertical-offset="2760">
           <folding>
-            <marker date="1404844660000" expanded="true" signature="297:345" placeholder="SELECT * FRO..Lists..." />
-            <marker date="1404844660000" expanded="true" signature="1248:1299" placeholder="SELECT * FRO..List_Items..." />
-            <marker date="1404844660000" expanded="true" signature="2353:2442" placeholder="INSERT INTO ..." />
-            <marker date="1404844660000" expanded="true" signature="2539:2605" placeholder="INSERT INTO ..." />
-            <marker date="1404844660000" expanded="true" signature="3168:3213" placeholder="INSERT INTO ..." />
+            <marker date="1404854764000" expanded="true" signature="297:345" placeholder="SELECT * FRO..Lists..." />
+            <marker date="1404854764000" expanded="true" signature="1248:1299" placeholder="SELECT * FRO..List_Items..." />
+            <marker date="1404854764000" expanded="true" signature="2353:2442" placeholder="INSERT INTO ..." />
+            <marker date="1404854764000" expanded="true" signature="2539:2605" placeholder="INSERT INTO ..." />
+            <marker date="1404854764000" expanded="true" signature="3602:3653" placeholder="INSERT INTO ..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/retrieve_list_items.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="12" selection-start="222" selection-end="222" vertical-scroll-proportion="0.20471464" vertical-offset="0" max-vertical-offset="806">
-          <folding />
         </state>
       </provider>
     </entry>

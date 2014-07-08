@@ -116,10 +116,30 @@ class Lists extends Data {
 
     }
 
+    public function edit_list($list_id, $items) {
+
+        // create a query that will delete the old list items
+
+        $delete = "DELETE * FROM List_Items WHERE list_id = '$list_id'";
+
+        $delete_result = $this->select($delete);
+
+        if (!$delete_result) {
+
+            // Let someone know
+            die("Could not delete old items");
+
+        } else {
+
+            $this->add_items($list_id, $items);
+
+        }
+    }
+
     public function add_items($list_id, $items) {
 
         // create the database query that will insert list items into the database
-        $insert = "INSERT INTO List_Items (list_id, name) VALUES ";
+        $insert = "INSERT INTO List_Items (list_id, name, done) VALUES ";
 
         // set an iterator as 1 (not 0 because I want the loop to match the count - not index - of the array item)
         $i = 1;
@@ -131,10 +151,11 @@ class Lists extends Data {
         foreach($items as $item) {
 
             // escape any gamebreaking characters
-            $item = mysql_real_escape_string($item);
+            $name = mysql_real_escape_string($item['name']);
+            $done = isset($item['done']) ? $item['done'] : false;
 
             // append item info to the query, along with the relational grocery_list id
-            $insert .= "('$list_id', '$item')";
+            $insert .= "('$list_id', '$name', '$done')";
 
             // if the incremented value is still less than the count of the items array, add some string glue
             if ($i < $count) {
@@ -149,6 +170,8 @@ class Lists extends Data {
         $insert_items = $this->insert($insert);
 
         if(!$insert_items) {
+
+            print_r($items);
 
             // let somebody know
             die('Could not insert items');

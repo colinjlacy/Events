@@ -20,7 +20,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <a class="btn btn-default" ng-click="updateList()">Update List</a>
-                    <a class="btn btn-default" target="_blank" href="create_pdf.php?id={{activeList.id}}&title={{activeList.urlencode}}">Print List</a>
+                    <a class="btn btn-default" ng-click="editList(activeList.id)">Edit List</a>
                     <button class="btn btn-default pull-right" ng-click="deleteList(activeList.id, $index)">Delete List</button>
                 </div>
             </div>

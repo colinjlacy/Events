@@ -1,19 +1,16 @@
-<div ng-controller="listCtrl">
+<div ng-controller="viewCtrl">
     <div class="container">
         <div class="row" ng-show="add.error">
             <div class="col-sm-12 alert alert-danger">
-                Uh oh, there was an error - {{add.error}}...
+                Uh oh, there was an error - {{edit.error}}...
             </div>
         </div>
         <div class="row">
             <div class="col-sm-8 col-sm-push-2">
 
                 <h2>
-                    Add a New Grocery List
+                    {{activeList.title}}
                 </h2>
-                <hr>
-                <label class="control-label lead">Give your List a Name:</label>
-                <input type="text" class="form-control" ng-model="add.title" />
                 <hr>
                 <label class="control-label">Add an item:</label>
                 <div class="input-group">
@@ -24,21 +21,19 @@
                 </div><!-- /input-group -->
             </div>
         </div>
-        <div class="row" ng-show="add.items">
+        <div class="row" ng-show="items">
             <div class="col-sm-8 col-sm-push-2">
                 <hr>
-                <a ng-click="save()" class="btn btn-success">Save</a>
-                <div ng-show="add.items">
-                    <hr>
-                    <div class="well">
-                        <h3 class="text-muted no-top">In this list:</h3>
-                        <ol class="lead no-bottom">
-                            <li ng-repeat="item in add.items track by $index">
-                                {{item}}
-                                <button class="pull-right btn btn-sm btn-danger fa fa-trash-o" ng-click="remove($index)"></button>
-                            </li>
-                        </ol>
-                    </div>
+                <a ng-click="edit()" class="btn btn-success">Save</a>
+                <hr>
+                <div class="well">
+                    <h3 class="text-muted no-top">In this list:</h3>
+                    <ol class="lead no-bottom">
+                        <li ng-repeat="item in items track by $index">
+                            {{item.name}}
+                            <button class="pull-right btn btn-sm btn-danger fa fa-trash-o" ng-click="remove($index)"></button>
+                        </li>
+                    </ol>
                 </div>
             </div>
         </div>

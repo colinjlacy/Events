@@ -18,6 +18,9 @@ angular.module('boomCal', [
 		$routeProvider.when("/lists/add", {
 			templateUrl: "partials/addList.html"
 		});
+		$routeProvider.when("/lists/edit/:id", {
+			templateUrl: "partials/editList.html"
+		});
 		$routeProvider.when("/lists/:id", {
 			templateUrl: "partials/viewList.html"
 		});
