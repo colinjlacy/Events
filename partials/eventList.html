@@ -1,0 +1,50 @@
+<div class="col-sm-4" ng-controller="eventControl">
+	<h2>Upcoming Events</h2>
+	<ul>
+		<li class="well" ng-repeat="event in findEvents | orderBy: start_date">
+			<p ng-click="showThisEvent(event)">
+				{{event.title}}<br/>
+				{{event.start_date}}
+			</p>
+		</li>
+	</ul>
+</div>
+
+<div class="col-sm-8">
+	<div class="well" ng-show="data.showEvent">
+		<h3>{{data.showEvent.title}}</h3>
+		<p class="lead">{{data.showEvent.month}} {{data.showEvent.day}}, {{data.showEvent.year}}</p>
+		<strong>{{data.showEvent.venue_name}}</strong>
+		<hr/>
+		<p>{{data.showEvent.description}}</p>
+		<button class="btn btn-primary" ng-click="eventAdd()">Add to Calendar</button>
+	</div>
+
+
+	<div class="well" ng-show="eventToBeAdded">
+		<h3>{{eventToBeAdded.title}}</h3>
+		<p class="lead">{{eventToBeAdded.month}} {{eventToBeAdded.day}}, {{eventToBeAdded.year}}</p>
+		<strong>{{eventToBeAdded.venue_name}}</strong>
+		<hr/>
+		<label class="control-label">Select a Calendar
+			<select ng-model="eventToBeAdded.calendar" ng-options="cal.summary for cal in cals.calsList" class="form-control"></select>
+		</label>
+		<label class="control-label">Want to invite some friends?
+			<div class="input-group">
+				<input type="text" ng-model="attendee" typeahead='contact as contact.title+", "+contact.email for contact in data.contacts | filter: $viewValue | limitTo:8' class="form-control">
+					    <span class="input-group-btn">
+					        <button class="btn btn-default" type="button" ng-click="addToAttendees()">Go!</button>
+					    </span>
+			</div><!-- /input-group -->
+		</label>
+
+		<h4 ng-show="attendees">Attendees</h4>
+		<ul>
+			<li ng-repeat="attendee in attendees">
+				{{attendee.title}}
+			</li>
+		</ul>
+
+		<button class="btn btn-success" ng-click="postToCal(eventToBeAdded)">Add it!</button>
+	</div>
+</div>

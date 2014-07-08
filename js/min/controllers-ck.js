@@ -1,0 +1,1 @@
+"use strict";var model={},boomControllers=angular.module("boomControllers",[]);boomControllers.controller("eventListCtrl",["$scope",function(e){var o={app_key:"pWDBS4hbDrHwCTMp",location:"New Orleans",date:"Next Week",page_size:25};EVDB.API.call("/events/search",o,function(o){return e.events=o.events.event}),console.log(e.events)}]);

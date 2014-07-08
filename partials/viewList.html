@@ -1,0 +1,29 @@
+<div class="container" ng-controller="viewCtrl">
+    <div class="row">
+        <div class="col-sm-8 col-sm-push-2">
+            <div class="row">
+                <div class="col-sm-10">
+                <h2>
+                    {{activeList.title}}
+                </h2>
+                </div>
+                <div class="col-sm-2">
+                    <button class="btn btn-default pull-right" id="hide-toggle" data-toggle="button" ng-click="hideDoneToggle()">Hide Checked</button>
+                </div>
+            </div>
+            <ol class="view-list">
+                <li class="view-list-item" ng-repeat="item in items" ng-class="{hidden: shouldBeHidden(item)}">
+                    <span ng-class="{'strike': item.done}">{{item.name}}</span>
+                    <button class="btn btn-sm fa fa-check pull-right item-check" ng-class="{'btn-success': item.done}" ng-click="doneToggle(item)"></button>
+                </li>
+            </ol>
+            <div class="row">
+                <div class="col-sm-12">
+                    <a class="btn btn-default" ng-click="updateList()">Update List</a>
+                    <a class="btn btn-default" target="_blank" href="create_pdf.php?id={{activeList.id}}&title={{activeList.urlencode}}">Print List</a>
+                    <button class="btn btn-default pull-right" ng-click="deleteList(activeList.id, $index)">Delete List</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
