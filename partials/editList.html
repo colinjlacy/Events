@@ -14,9 +14,9 @@
                 <hr>
                 <label class="control-label">Add an item:</label>
                 <div class="input-group">
-                    <input type="text" id="addInput" class="form-control" ng-model="add.itemToAdd" />
+                    <input type="text" id="addInput" class="form-control" ng-model="itemToAdd.name" />
                     <span class="input-group-btn">
-                        <button class="btn btn-default" type="button" ng-click="addItem(add.itemToAdd)">Add It!</button>
+                        <button class="btn btn-default" type="button" ng-click="addItem(itemToAdd)">Add It!</button>
                     </span>
                 </div><!-- /input-group -->
             </div>
@@ -24,13 +24,13 @@
         <div class="row" ng-show="items">
             <div class="col-sm-8 col-sm-push-2">
                 <hr>
-                <a ng-click="edit()" class="btn btn-success">Save</a>
+                <a ng-click="saveEditedList()" class="btn btn-success">Save</a>
                 <hr>
                 <div class="well">
                     <h3 class="text-muted no-top">In this list:</h3>
                     <ol class="lead no-bottom">
                         <li ng-repeat="item in items track by $index">
-                            {{item.name}}
+	                        <span ng-class="{'strike': item.done === true}">{{item.name}}</span>
                             <button class="pull-right btn btn-sm btn-danger fa fa-trash-o" ng-click="remove($index)"></button>
                         </li>
                     </ol>

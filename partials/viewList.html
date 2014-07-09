@@ -13,8 +13,8 @@
             </div>
             <ol class="view-list">
                 <li class="view-list-item" ng-repeat="item in items" ng-class="{hidden: shouldBeHidden(item)}">
-                    <span ng-class="{'strike': item.done}">{{item.name}}</span>
-                    <button class="btn btn-sm fa fa-check pull-right item-check" ng-class="{'btn-success': item.done}" ng-click="doneToggle(item)"></button>
+                    <span ng-class="{'strike': item.done === true}">{{item.name}}</span>
+                    <button class="btn btn-sm fa fa-check pull-right item-check" ng-class="{'btn-success': item.done === true}" ng-click="doneToggle(item)"></button>
                 </li>
             </ol>
             <div class="row">

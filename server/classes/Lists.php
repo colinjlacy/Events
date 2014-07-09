@@ -47,6 +47,27 @@ class Lists extends Data {
 
     }
 
+    public function check_id($google_id, $list_id) {
+
+        $exists = "SELECT * FROM Lists WHERE id = $list_id AND google_id = '$google_id'";
+
+        $exists_query = $this->select($exists);
+
+        $test_result = mysqli_fetch_assoc($exists_query);
+
+        if (!$test_result) {
+
+            print_r($exists_query);
+            // let somebody know
+            die("Could not authenticate ownership for list:" . $list_id . " with id: " . $google_id);
+
+        } else {
+
+            return true;
+
+        }
+    }
+
     public function get_items($list_id) {
 
         // create a query that checks whether or not the user exists in the database
@@ -119,21 +140,27 @@ class Lists extends Data {
     public function edit_list($list_id, $items) {
 
         // create a query that will delete the old list items
+        $delete = "DELETE FROM List_Items WHERE list_id = $list_id";
 
-        $delete = "DELETE * FROM List_Items WHERE list_id = '$list_id'";
-
+        // run the query
         $delete_result = $this->select($delete);
 
+        // if it didn't work...
         if (!$delete_result) {
 
             // Let someone know
-            die("Could not delete old items");
+            die("Could not delete old items from " . $list_id);
 
         } else {
 
+            // add the new list items to the database
             $this->add_items($list_id, $items);
 
+            // return the list ID
+            return $list_id;
+
         }
+        
     }
 
     public function add_items($list_id, $items) {

@@ -38,7 +38,7 @@ angular.module("boomCal")
         };
 
         $scope.shouldBeHidden = function(item) {
-            if ($scope.hideDone && item.done == true) {
+            if ($scope.hideDone && item.done === true) {
                 return true;
             }
         };
@@ -71,7 +71,7 @@ angular.module("boomCal")
         };
 
         $scope.deleteList = function(id) {
-            var url = 'delete_list.php';
+            var url = 'server/delete_list.php';
 
             $http({
                 url: url,
@@ -89,13 +89,43 @@ angular.module("boomCal")
                             break;
                         }
                     }
-                    $location.path('/');
+                    $location.path('lists/');
                 });
         };
 
 		$scope.editList = function(id) {
 			$location.path('lists/edit/' + id);
 		};
+
+		$scope.addItem = function(item) {
+
+			$scope.items.push(item);
+			$scope.itemToAdd = "";
+			var input = document.getElementById('addInput');
+			input.focus();
+		};
+
+		$scope.remove = function(index) {
+			$scope.items.splice(index, 1);
+		};
+
+		$scope.saveEditedList = function() {
+			var url = 'server/edit_list.php';
+			var data = {
+				google_id: $rootScope.google_id,
+				list_id: $rootScope.activeList.id,
+				items: $scope.items
+			}
+
+			$http({
+				url: url,
+				method: "POST",
+				data: data
+			})
+				.success(function(returnedID) {
+					$location.path('lists/' + returnedID);
+				});
+		}
 
 
     });

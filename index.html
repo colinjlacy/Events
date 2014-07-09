@@ -89,6 +89,13 @@
 </header>
 
 <div class="container">
+	<div class="row">
+		<div class="col-sm-12 text-center">
+			<div ng-show="data.user == null">
+				<google-plus-signin clientid="185024779579-go9t2i4b44oaffv6as49ijotubekkcql.apps.googleusercontent.com"></google-plus-signin>
+			</div>
+		</div>
+	</div>
 	<ng-view></ng-view>
 </div>
 
