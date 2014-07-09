@@ -20,10 +20,10 @@ angular.module("boomCal")
         getList($routeParams.id);
 
         $scope.doneToggle = function(item) {
-            if (item.done == true) {
-                item.done = false;
+            if (item.done == 1) {
+                item.done = 0;
             } else {
-                item.done = true;
+                item.done = 1;
             }
         };
 
@@ -38,7 +38,7 @@ angular.module("boomCal")
         };
 
         $scope.shouldBeHidden = function(item) {
-            if ($scope.hideDone && item.done === true) {
+            if ($scope.hideDone && item.done == 1) {
                 return true;
             }
         };
@@ -70,25 +70,20 @@ angular.module("boomCal")
                 });
         };
 
+
+		// TODO: Pull this out into a service, and revise so that a message is displayed on the $rootScope
         $scope.deleteList = function(id) {
             var url = 'server/delete_list.php';
 
             $http({
                 url: url,
                 method: "POST",
-                data: id
+                data: {
+	                list_id: id,
+	                google_id: $rootScope.google_id
+                }
             })
                 .success(function(data) {
-                    for (var i = 0; i < $rootScope.lists.length; i++) {
-                        console.log("id: "+id);
-                        console.log("list id: "+$rootScope.lists[i].id);
-
-                        if (id == $rootScope.lists[i].id) {
-                            console.log("list id: "+$rootScope.lists[i].id);
-                            $rootScope.lists.splice(i, 1);
-                            break;
-                        }
-                    }
                     $location.path('lists/');
                 });
         };
@@ -124,6 +119,10 @@ angular.module("boomCal")
 			})
 				.success(function(returnedID) {
 					$location.path('lists/' + returnedID);
+					$rootScope.activeList.alert = {
+						type: "alert-success",
+						message: "This list has been updated!  Nicely done!"
+					}
 				});
 		}
 

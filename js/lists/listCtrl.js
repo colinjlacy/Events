@@ -34,7 +34,10 @@ angular.module("boomCal")
             $http({
                 url: url,
                 method: "POST",
-                data: id
+                data: {
+	                list_id: id,
+	                google_id: $rootScope.google_id
+                }
             })
                 .success(function(data) {
                     $scope.lists.splice(index, 1);

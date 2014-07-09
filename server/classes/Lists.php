@@ -139,8 +139,38 @@ class Lists extends Data {
 
     public function edit_list($list_id, $items) {
 
+        // delete the old list items for this list
+        $this->delete_items($list_id);
+
+        // add the new list items to the database
+        $this->add_items($list_id, $items);
+
+        // return the list ID
+        return $list_id;
+
+    }
+
+    public function delete_items($list_id) {
         // create a query that will delete the old list items
         $delete = "DELETE FROM List_Items WHERE list_id = $list_id";
+
+        // run the query
+        $delete_result = $this->select($delete);
+
+        // if it didn't work...
+        if (!$delete_result) {
+
+            // Let someone know
+            die("Could not delete list items from " . $list_id);
+
+        }
+
+    }
+
+    public function delete_list($list_id) {
+
+        // create a query that will delete the list from the database
+        $delete = "DELETE FROM Lists WHERE id = $list_id";
 
         // run the query
         $delete_result = $this->select($delete);
@@ -153,14 +183,13 @@ class Lists extends Data {
 
         } else {
 
-            // add the new list items to the database
-            $this->add_items($list_id, $items);
+            // delete the list items that went along with that list
+            $this->delete_items($list_id);
 
-            // return the list ID
-            return $list_id;
+            // return a true
+            return true;
 
         }
-        
     }
 
     public function add_items($list_id, $items) {
