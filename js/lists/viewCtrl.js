@@ -124,6 +124,77 @@ angular.module("boomCal")
 						message: "This list has been updated!  Nicely done!"
 					}
 				});
+		};
+
+
+		// TODO: Figure out if this is better with ng-include
+		$scope.showCalendarForm = function() {
+			// set the calendarForm property to true so that the form will display and the list will be hidden
+			$scope.calendarForm = true;
+		};
+
+		$scope.addToCalAttendees = function() {
+			if (!($scope.listAttendees && $scope.listAttendees.length > 0)) {
+				$scope.listAttendees = [];
+			}
+			$scope.listAttendees.push($scope.attendee);
+			$scope.attendee = undefined;
+		};
+
+		$scope.addToCalendar = function() {
+
+			var token = $scope.token;
+
+			var message = $scope.listMessage + " <a href='" + $location.absUrl() + "'>View it online!</a>"
+
+			var attendees = [];
+
+			if ($scope.listAttendees) {
+				for (var i = 0; i < $scope.listAttendees.length; i++) {
+					attendees.push({email: $scope.listAttendees[i].email});
+				}
+			}
+
+			var calID = encodeURIComponent($scope.listCalendar.id);
+
+
+			// TODO: Add the link back to this list to the listMessage, so that people can access it from their calendars
+			var calendarInput = {
+				start: {
+					date: $scope.listDate.toISOString().slice(0,10)
+				},
+				end: {
+					date: $scope.listDate.toISOString().slice(0,10)
+				},
+				summary: $rootScope.activeList.title,
+				description: message,
+				attendees: attendees
+			};
+
+			$http({
+				url: "https://www.googleapis.com/calendar/v3/calendars/" + calID + "/events?sendNotifications=true&key=185024779579-go9t2i4b44oaffv6as49ijotubekkcql.apps.googleusercontent.com&access_token=" + token,
+				method: "POST",
+				data: calendarInput
+			})
+				.success(function() {
+					$scope.calendarForm = false;
+					$rootScope.activeList.alert = {
+						type: "alert-success",
+						message: "This list has been added to your calendar!  Nicely done!"
+					}
+				})
+				.error(function(error) {
+					$rootScope.activeList.alert = {
+						type: "alert-danger",
+						message: "There was an error: " + error
+					}
+				})
+
+		};
+
+		$scope.viewReset = function() {
+			$scope.calendarForm = false;
+			$scope.emailForm = false;
 		}
 
 
