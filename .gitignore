@@ -1,1 +1,9 @@
+<<<<<<< HEAD
 data/db/mean-dev.1
+=======
+docs/phpdoc/
+test/message.txt
+test/testbootstrap.php
+.idea
+build/
+>>>>>>> 1522094b825f37a7c7235d863555f3d12e01f677

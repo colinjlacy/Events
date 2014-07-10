@@ -56,28 +56,25 @@
       <file leaf-file-name="Lists.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/classes/Lists.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="189" column="24" selection-start="4857" selection-end="4857" vertical-scroll-proportion="-29.833334" vertical-offset="2044" max-vertical-offset="3600">
-              <folding>
-                <marker date="1404923707000" expanded="true" signature="297:345" placeholder="SELECT * FRO..Lists..." />
-                <marker date="1404923707000" expanded="true" signature="1177:1673" placeholder="SELECT * FRO..Users..." />
-                <marker date="1404923707000" expanded="true" signature="1177:1245" placeholder="SELECT * FRO..Lists..." />
-                <marker date="1404923707000" expanded="true" signature="1177:1245" placeholder="SELECT * FRO..Lists..." />
-                <marker date="1404923707000" expanded="true" signature="1177:1203" placeholder="SELECT * FRO..Users..." />
-                <marker date="1404923707000" expanded="true" signature="1764:1815" placeholder="SELECT * FRO..List_Items..." />
-                <marker date="1404923707000" expanded="true" signature="2869:2958" placeholder="INSERT INTO ..." />
-                <marker date="1404923707000" expanded="true" signature="3055:3121" placeholder="INSERT INTO ..." />
-                <marker date="1404923707000" expanded="true" signature="3957:4004" placeholder="DELETE FROM ..." />
-                <marker date="1404923707000" expanded="true" signature="4397:4434" placeholder="DELETE FROM ..." />
-                <marker date="1404923707000" expanded="true" signature="5029:5080" placeholder="INSERT INTO ..." />
-              </folding>
+            <state line="189" column="24" selection-start="4857" selection-end="4857" vertical-scroll-proportion="0.0" vertical-offset="2835" max-vertical-offset="3675">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="delete_list.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="delete_list.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/delete_list.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="481" selection-end="481" vertical-scroll-proportion="0.33498758" vertical-offset="0" max-vertical-offset="806">
+            <state line="8" column="0" selection-start="73" selection-end="198" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="465">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="send_mail.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/send_mail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="0" selection-start="985" selection-end="985" vertical-scroll-proportion="0.54022986" vertical-offset="378" max-vertical-offset="900">
               <folding />
             </state>
           </provider>
@@ -86,7 +83,7 @@
       <file leaf-file-name="edit_list.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/edit_list.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="1" selection-start="0" selection-end="668" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="480">
+            <state line="26" column="1" selection-start="0" selection-end="668" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="480">
               <folding />
             </state>
           </provider>
@@ -125,6 +122,7 @@
         <option value="$PROJECT_DIR$/server/edit_list.php" />
         <option value="$PROJECT_DIR$/server/delete_list.php" />
         <option value="$PROJECT_DIR$/server/classes/Lists.php" />
+        <option value="$PROJECT_DIR$/server/send_mail.php" />
       </list>
     </option>
   </component>
@@ -212,6 +210,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHPMailer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soundcloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="classes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -264,10 +284,6 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
-      <browser start="false" url="" with-js-debugger="false" />
-      <method />
-    </configuration>
     <configuration default="true" type="GoTestConfiguration" factoryName="Go Test">
       <option name="name" value="Go Test" />
       <option name="saveOutputToFile" value="false" />
@@ -287,6 +303,10 @@
       <option name="testBeforeBenchmark" value="false" />
       <option name="goVetEnabled" value="false" />
       <module name="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <browser start="false" url="" with-js-debugger="false" />
       <method />
     </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="4308dfe1-d94a-46e3-86e0-1c1f25ac9756" server_name="LocalHost">
@@ -314,7 +334,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32943925" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -346,11 +366,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/set_user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="92" selection-end="221" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="270" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="10" selection-start="2234" selection-end="2234" vertical-scroll-proportion="0.0" vertical-offset="379" max-vertical-offset="1530">
@@ -378,19 +393,7 @@
     <entry file="file://$PROJECT_DIR$/server/classes/Lists.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="133" column="52" selection-start="3622" selection-end="3622" vertical-scroll-proportion="0.0" vertical-offset="1995" max-vertical-offset="2490">
-          <folding>
-            <marker date="1404923707000" expanded="true" signature="297:345" placeholder="SELECT * FRO..Lists..." />
-            <marker date="1404923707000" expanded="true" signature="1177:1673" placeholder="SELECT * FRO..Users..." />
-            <marker date="1404923707000" expanded="true" signature="1177:1245" placeholder="SELECT * FRO..Lists..." />
-            <marker date="1404923707000" expanded="true" signature="1177:1245" placeholder="SELECT * FRO..Lists..." />
-            <marker date="1404923707000" expanded="true" signature="1177:1203" placeholder="SELECT * FRO..Users..." />
-            <marker date="1404923707000" expanded="true" signature="1764:1815" placeholder="SELECT * FRO..List_Items..." />
-            <marker date="1404923707000" expanded="true" signature="2869:2958" placeholder="INSERT INTO ..." />
-            <marker date="1404923707000" expanded="true" signature="3055:3121" placeholder="INSERT INTO ..." />
-            <marker date="1404923707000" expanded="true" signature="3957:4004" placeholder="DELETE FROM ..." />
-            <marker date="1404923707000" expanded="true" signature="4397:4434" placeholder="DELETE FROM ..." />
-            <marker date="1404923707000" expanded="true" signature="5029:5080" placeholder="INSERT INTO ..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -460,19 +463,7 @@
     <entry file="file://$PROJECT_DIR$/server/classes/Lists.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="109" column="54" selection-start="2889" selection-end="2889" vertical-scroll-proportion="0.0" vertical-offset="1635" max-vertical-offset="2310">
-          <folding>
-            <marker date="1404923707000" expanded="true" signature="297:345" placeholder="SELECT * FRO..Lists..." />
-            <marker date="1404923707000" expanded="true" signature="1177:1673" placeholder="SELECT * FRO..Users..." />
-            <marker date="1404923707000" expanded="true" signature="1177:1245" placeholder="SELECT * FRO..Lists..." />
-            <marker date="1404923707000" expanded="true" signature="1177:1245" placeholder="SELECT * FRO..Lists..." />
-            <marker date="1404923707000" expanded="true" signature="1177:1203" placeholder="SELECT * FRO..Users..." />
-            <marker date="1404923707000" expanded="true" signature="1764:1815" placeholder="SELECT * FRO..List_Items..." />
-            <marker date="1404923707000" expanded="true" signature="2869:2958" placeholder="INSERT INTO ..." />
-            <marker date="1404923707000" expanded="true" signature="3055:3121" placeholder="INSERT INTO ..." />
-            <marker date="1404923707000" expanded="true" signature="3957:4004" placeholder="DELETE FROM ..." />
-            <marker date="1404923707000" expanded="true" signature="4397:4434" placeholder="DELETE FROM ..." />
-            <marker date="1404923707000" expanded="true" signature="5029:5080" placeholder="INSERT INTO ..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -530,19 +521,7 @@
     <entry file="file://$PROJECT_DIR$/server/classes/Lists.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="129" column="33" selection-start="3488" selection-end="3488" vertical-scroll-proportion="0.0" vertical-offset="1935" max-vertical-offset="2310">
-          <folding>
-            <marker date="1404923707000" expanded="true" signature="297:345" placeholder="SELECT * FRO..Lists..." />
-            <marker date="1404923707000" expanded="true" signature="1177:1673" placeholder="SELECT * FRO..Users..." />
-            <marker date="1404923707000" expanded="true" signature="1177:1245" placeholder="SELECT * FRO..Lists..." />
-            <marker date="1404923707000" expanded="true" signature="1177:1245" placeholder="SELECT * FRO..Lists..." />
-            <marker date="1404923707000" expanded="true" signature="1177:1203" placeholder="SELECT * FRO..Users..." />
-            <marker date="1404923707000" expanded="true" signature="1764:1815" placeholder="SELECT * FRO..List_Items..." />
-            <marker date="1404923707000" expanded="true" signature="2869:2958" placeholder="INSERT INTO ..." />
-            <marker date="1404923707000" expanded="true" signature="3055:3121" placeholder="INSERT INTO ..." />
-            <marker date="1404923707000" expanded="true" signature="3957:4004" placeholder="DELETE FROM ..." />
-            <marker date="1404923707000" expanded="true" signature="4397:4434" placeholder="DELETE FROM ..." />
-            <marker date="1404923707000" expanded="true" signature="5029:5080" placeholder="INSERT INTO ..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -699,33 +678,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/edit_list.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="1" selection-start="0" selection-end="668" vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="480">
+        <state line="26" column="1" selection-start="0" selection-end="668" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="480">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/classes/Lists.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="189" column="24" selection-start="4857" selection-end="4857" vertical-scroll-proportion="-29.833334" vertical-offset="2044" max-vertical-offset="3600">
-          <folding>
-            <marker date="1404923707000" expanded="true" signature="297:345" placeholder="SELECT * FRO..Lists..." />
-            <marker date="1404923707000" expanded="true" signature="1177:1673" placeholder="SELECT * FRO..Users..." />
-            <marker date="1404923707000" expanded="true" signature="1177:1245" placeholder="SELECT * FRO..Lists..." />
-            <marker date="1404923707000" expanded="true" signature="1177:1245" placeholder="SELECT * FRO..Lists..." />
-            <marker date="1404923707000" expanded="true" signature="1177:1203" placeholder="SELECT * FRO..Users..." />
-            <marker date="1404923707000" expanded="true" signature="1764:1815" placeholder="SELECT * FRO..List_Items..." />
-            <marker date="1404923707000" expanded="true" signature="2869:2958" placeholder="INSERT INTO ..." />
-            <marker date="1404923707000" expanded="true" signature="3055:3121" placeholder="INSERT INTO ..." />
-            <marker date="1404923707000" expanded="true" signature="3957:4004" placeholder="DELETE FROM ..." />
-            <marker date="1404923707000" expanded="true" signature="4397:4434" placeholder="DELETE FROM ..." />
-            <marker date="1404923707000" expanded="true" signature="5029:5080" placeholder="INSERT INTO ..." />
-          </folding>
+        <state line="189" column="24" selection-start="4857" selection-end="4857" vertical-scroll-proportion="0.0" vertical-offset="2835" max-vertical-offset="3675">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/delete_list.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="481" selection-end="481" vertical-scroll-proportion="0.33498758" vertical-offset="0" max-vertical-offset="806">
+        <state line="8" column="0" selection-start="73" selection-end="198" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/send_mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="0" selection-start="985" selection-end="985" vertical-scroll-proportion="0.54022986" vertical-offset="378" max-vertical-offset="900">
           <folding />
         </state>
       </provider>

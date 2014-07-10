@@ -132,6 +132,10 @@ angular.module("boomCal")
 			// set the calendarForm property to true so that the form will display and the list will be hidden
 			$scope.calendarForm = true;
 		};
+		$scope.showEmailForm = function() {
+			// set the calendarForm property to true so that the form will display and the list will be hidden
+			$scope.emailForm = true;
+		};
 
 		$scope.addToCalAttendees = function() {
 			if (!($scope.listAttendees && $scope.listAttendees.length > 0)) {
@@ -141,11 +145,25 @@ angular.module("boomCal")
 			$scope.attendee = undefined;
 		};
 
+		$scope.addToRecipients = function() {
+			if (!($scope.listRecipients && $scope.listRecipients.length > 0)) {
+				$scope.listRecipients = [];
+			}
+			$scope.listRecipients.push($scope.recipient);
+			$scope.recipient = undefined;
+		};
+
 		$scope.addToCalendar = function() {
 
 			var token = $scope.token;
 
-			var message = $scope.listMessage + " <a href='" + $location.absUrl() + "'>View it online!</a>"
+			var messageList;
+
+			for (var i = 0; i < $scope.items.length; i++) {
+				messageList += "<li>" + $scope.items[i].name + "</li>";
+			}
+
+			var message = $scope.listMessage + " <ul>" + messageList + "</ul><a href='" + $location.absUrl() + "'>View it online!</a>";
 
 			var attendees = [];
 
@@ -190,6 +208,29 @@ angular.module("boomCal")
 					}
 				})
 
+		};
+
+		$scope.sendEmail = function() {
+
+
+			$http({
+				url: "server/send_mail.php",
+				method: "POST",
+				data: {
+					recipients: $scope.listRecipients,
+					message: $scope.listMessage,
+					items: $scope.items,
+					subject: $rootScope.activeList.title
+				}
+			})
+				.success(function(data) {
+					console.log(data);
+					$scope.emailForm = false;
+					$rootScope.activeList.alert = {
+						type: "alert-success",
+						message: "This list has been emailed!  Nicely done!"
+					}
+				});
 		};
 
 		$scope.viewReset = function() {
