@@ -24,6 +24,12 @@ angular.module('boomCal', [
 		$routeProvider.when("/lists/:id", {
 			templateUrl: "partials/viewList.html"
 		});
+//		$routeProvider.when("/movies", {
+//			templateUrl: "partials/movies.html"
+//		});
+//		$routeProvider.when("/movies/:id", {
+//			templateUrl: "partials/viewMovie.html"
+//		});
 		$routeProvider.otherwise({
 			redirectTo: "/"
 		});

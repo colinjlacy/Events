@@ -13,6 +13,6 @@ echo file_get_contents(
 	'&page_number='.$page. // What page are we on again?
 	'&category='.$category. // if defined, list only this category
 	'&include=categories'. // make sure everyone has a category
-	'&sort_order=date'. // HULK SMASH
+	'&sort_order=popularity'. // HULK SMASH
 	'&after_start_date='.$start.
 	'&app_key=pWDBS4hbDrHwCTMp' ); ?>

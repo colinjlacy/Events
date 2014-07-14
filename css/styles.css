@@ -18,6 +18,11 @@
 	}
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 button, button:active, textarea, input { outline: none; }
 :focus {outline:none;} ::-moz-focus-inner {border:0;}
 
@@ -55,4 +60,13 @@ button, button:active, textarea, input { outline: none; }
 }
 #hide-toggle {
 	margin-bottom: 1em;
+}
+
+#event-list {
+	list-style: none;
+	padding-left: 0;
+}
+
+.event-list-item {
+
 }

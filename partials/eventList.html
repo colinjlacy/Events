@@ -1,13 +1,21 @@
-<div class="col-sm-4" ng-controller="eventControl">
+<div ng-controller="eventControl">
 	<h2>Upcoming Events</h2>
-	<ul>
-		<li class="well" ng-repeat="event in findEvents | orderBy: start_date">
-			<p ng-click="showThisEvent(event)">
-				{{event.title}}<br/>
-				{{event.start_date}}
-			</p>
+	<ul id="event-list" class="row">
+		<li class=" col-sm-8 col-sm-pus-2 event-list-item" ng-repeat="event in findEvents | orderBy: start_date">
+			<p class="lead text-info" ng-click="showThisEvent(event)">{{event.title}}</p>
+			<div class="row">
+				<div class="col-sm-3 col-md-2" ng-show="event.image.medium">
+					<img src="{{event.image.medium.url}}" alt="{{event.title}}" />
+				</div>
+				<div class="col-sm-9 col-md-10">
+					<!--{{event}}-->
+				</div>
+			</div>
+			<hr/>
 		</li>
 	</ul>
+	<button class="btn btn-primary" ng-show="findEvents.previousEvents">Previous Page</button>
+	<button class="btn btn-primary" ng-show="findEvents.nextEvents">Next Page</button>
 </div>
 
 <div class="col-sm-8">

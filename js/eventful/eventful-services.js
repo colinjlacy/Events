@@ -1,13 +1,14 @@
 angular.module("eventfulServices", [])
 	.factory("eventfulServices", function($http) {
 		return {
-			findEvents: function(start, end) {
+			findEvents: function(start, end, page) {
 
 				var listOfEvents = [];
 
 				// get the current date, which will be the minimum value of the initial event request
 				var date = start ? start : new Date(),
-					now = date.toISOString().slice(0,10); // revert the current date to an ISO string
+					now = date.toISOString().slice(0,10), // revert the current date to an ISO string
+					page = page ? page : 1;
 
 
 				// get a date 30 days in the future
@@ -29,10 +30,12 @@ angular.module("eventfulServices", [])
 					"Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ];
 
 				$http({
-					url: 'server/call.php?date_start=' + now + '00&date_stop=' + future + '00&page=1',
+					url: 'server/call.php?date_start=' + now + '00&date_stop=' + future + '00&page=' + page,
 //					url: 'call.php?date_start=' + now + '&date_stop=' + future,
 					method: 'GET'
 				}).success(function(data) {
+
+						console.log(data);
 
 						for (var i = 0; i < data.events.event.length; i++) {
 
@@ -54,6 +57,8 @@ angular.module("eventfulServices", [])
 
 							// arrange for a bulk datalist that can be spit out as a long list
 							listOfEvents.push(data.events.event[i]);
+
+							console.log(data.events.event[i]);
 
 						}
 					});
