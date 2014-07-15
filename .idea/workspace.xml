@@ -26,7 +26,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="8" selection-start="2673" selection-end="2673" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="1650">
+            <state line="67" column="8" selection-start="2687" selection-end="2687" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="1650">
               <folding />
             </state>
           </provider>
@@ -36,15 +36,6 @@
         <entry file="file://$PROJECT_DIR$/server/create_list.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="9" column="0" selection-start="0" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="345">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Lists.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/classes/Lists.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="189" column="24" selection-start="4857" selection-end="4857" vertical-scroll-proportion="0.0" vertical-offset="2835" max-vertical-offset="3675">
               <folding />
             </state>
           </provider>
@@ -62,7 +53,7 @@
       <file leaf-file-name="send_mail.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/send_mail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="0" selection-start="985" selection-end="985" vertical-scroll-proportion="-24.458334" vertical-offset="73" max-vertical-offset="900">
+            <state line="44" column="0" selection-start="985" selection-end="985" vertical-scroll-proportion="0.0" vertical-offset="73" max-vertical-offset="900">
               <folding />
             </state>
           </provider>
@@ -71,16 +62,16 @@
       <file leaf-file-name="get_theaters.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/get_theaters.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="4" selection-start="0" selection-end="358" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="240">
+            <state line="10" column="4" selection-start="0" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="240">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get_showtimes.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="get_showtimes.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/get_showtimes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="116" selection-start="166" selection-end="166" vertical-scroll-proportion="0.09328358" vertical-offset="0" max-vertical-offset="804">
+            <state line="11" column="0" selection-start="50" selection-end="356" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
@@ -89,7 +80,16 @@
       <file leaf-file-name="call.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/call.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="345">
+            <state line="17" column="16" selection-start="0" selection-end="609" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="345">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="event_categories.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/event_categories.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="29" selection-start="369" selection-end="369" vertical-scroll-proportion="0.19206145" vertical-offset="0" max-vertical-offset="781">
               <folding />
             </state>
           </provider>
@@ -107,7 +107,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="8" selection-start="880" selection-end="880" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="750">
+            <state line="33" column="8" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="750">
               <folding />
             </state>
           </provider>
@@ -140,6 +140,7 @@
         <option value="$PROJECT_DIR$/server/send_mail.php" />
         <option value="$PROJECT_DIR$/server/get_movies.php" />
         <option value="$PROJECT_DIR$/server/get_showtimes.php" />
+        <option value="$PROJECT_DIR$/server/event_categories.php" />
       </list>
     </option>
   </component>
@@ -181,6 +182,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -215,7 +217,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -261,10 +262,6 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
-      <browser start="false" url="" with-js-debugger="false" />
-      <method />
-    </configuration>
     <configuration default="true" type="GoTestConfiguration" factoryName="Go Test">
       <option name="name" value="Go Test" />
       <option name="saveOutputToFile" value="false" />
@@ -284,6 +281,10 @@
       <option name="testBeforeBenchmark" value="false" />
       <option name="goVetEnabled" value="false" />
       <module name="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <browser start="false" url="" with-js-debugger="false" />
       <method />
     </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="4308dfe1-d94a-46e3-86e0-1c1f25ac9756" server_name="LocalHost">
@@ -312,7 +313,6 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32867134" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32827103" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32974428" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -324,6 +324,7 @@
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15679677" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32827103" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -343,13 +344,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/classes/Lists.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="52" selection-start="3622" selection-end="3622" vertical-scroll-proportion="0.0" vertical-offset="1995" max-vertical-offset="2490">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/classes/Data.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="5" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="975" />
@@ -404,10 +398,7 @@
     <entry file="file://$PROJECT_DIR$/server/classes/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="51" selection-start="537" selection-end="572" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="870">
-          <folding>
-            <marker date="1404847160000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Users..." />
-            <marker date="1404847160000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -462,10 +453,7 @@
     <entry file="file://$PROJECT_DIR$/server/classes/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="51" selection-start="537" selection-end="572" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="870">
-          <folding>
-            <marker date="1404847160000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Users..." />
-            <marker date="1404847160000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -571,7 +559,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="8" selection-start="880" selection-end="880" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="750">
+        <state line="33" column="8" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="750">
           <folding />
         </state>
       </provider>
@@ -583,7 +571,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="8" selection-start="2673" selection-end="2673" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="1650">
+        <state line="67" column="8" selection-start="2687" selection-end="2687" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="1650">
           <folding />
         </state>
       </provider>
@@ -618,10 +606,7 @@
     <entry file="file://$PROJECT_DIR$/server/classes/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="64" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="870">
-          <folding>
-            <marker date="1404847160000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Users..." />
-            <marker date="1404847160000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -648,28 +633,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/send_mail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="985" selection-end="985" vertical-scroll-proportion="-24.458334" vertical-offset="73" max-vertical-offset="900">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/call.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="828">
+        <state line="44" column="0" selection-start="985" selection-end="985" vertical-scroll-proportion="0.0" vertical-offset="73" max-vertical-offset="900">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/get_theaters.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="4" selection-start="0" selection-end="358" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="240">
+        <state line="10" column="4" selection-start="0" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/call.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="16" selection-start="0" selection-end="609" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="345">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/get_showtimes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="116" selection-start="166" selection-end="166" vertical-scroll-proportion="0.09328358" vertical-offset="0" max-vertical-offset="804">
+        <state line="11" column="0" selection-start="50" selection-end="356" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/event_categories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="29" selection-start="369" selection-end="369" vertical-scroll-proportion="0.19206145" vertical-offset="0" max-vertical-offset="781">
           <folding />
         </state>
       </provider>

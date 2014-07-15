@@ -68,5 +68,21 @@ button, button:active, textarea, input { outline: none; }
 }
 
 .event-list-item {
+	margin-bottom: 1em;
+}
 
+.event-list-item .content {
+	padding: 1em;
+	display: inline-block;
+}
+
+.event-list-item-wrapper {
+	background: #eee;
+	width: 100%;
+	display: block;
+	min-height: 128px;
+}
+
+.event-list-item-image {
+	float: right;
 }

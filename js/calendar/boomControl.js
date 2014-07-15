@@ -1,5 +1,5 @@
 angular.module("boomCal")
-	.controller('boomControl', function ($scope, $http, eventDisplay, eventfulServices) {
+	.controller('boomControl', function ($scope, $rootScope, $http, eventDisplay, eventfulServices) {
 
 
 		// on sucessful login

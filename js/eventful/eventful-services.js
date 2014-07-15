@@ -1,7 +1,7 @@
 angular.module("eventfulServices", [])
 	.factory("eventfulServices", function($http) {
 		return {
-			findEvents: function(start, end, page) {
+			findEvents: function(start, end, page, category) {
 
 				var listOfEvents = [];
 
@@ -9,7 +9,6 @@ angular.module("eventfulServices", [])
 				var date = start ? start : new Date(),
 					now = date.toISOString().slice(0,10), // revert the current date to an ISO string
 					page = page ? page : 1;
-
 
 				// get a date 30 days in the future
 				var future = end ? end : date.addDays(30);
@@ -26,13 +25,21 @@ angular.module("eventfulServices", [])
 				now = reformat(now);
 				future = reformat(future);
 
-				var monthNames = [ "neverUsed", "Jan", "Feb", "Mar", "Apr", "May", "Jun",
-					"Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ];
+				var monthNames = [ "neverUsed", "January", "February", "March", "April", "May", "June",
+					"July", "August", "September", "October", "November", "December" ];
+
+				var queryParams = {
+					date_start: now + "00",
+					date_stop: future + "00",
+					page_size: page,
+					category: category
+				};
 
 				$http({
-					url: 'server/call.php?date_start=' + now + '00&date_stop=' + future + '00&page=' + page,
+					url: 'server/call.php',
 //					url: 'call.php?date_start=' + now + '&date_stop=' + future,
-					method: 'GET'
+					method: 'GET',
+					params: queryParams
 				}).success(function(data) {
 
 						console.log(data);
