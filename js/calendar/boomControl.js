@@ -14,7 +14,7 @@ angular.module("boomCal")
 
 			$scope.cals = eventDisplay.listCalendars(token);
 
-			$scope.findEvents = eventfulServices.findEvents();
+			$rootScope.findEvents = eventfulServices.findEvents();
 
 		});
 
@@ -141,7 +141,7 @@ angular.module("boomCal")
 				end = $scope.endDate;
 
 			$scope.data = eventDisplay.listEventsOnLoad(token, start, end);
-			$scope.findEvents = eventfulServices.findEvents(start, end);
+			$rootScope.findEvents = eventfulServices.findEvents(start, end);
 		};
 
 //		$scope.initDate = new Date('2016-15-20');

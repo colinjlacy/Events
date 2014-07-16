@@ -10,9 +10,36 @@ angular.module("boomCal")
 			$scope.eventView = "partials/viewEvent.html";
 		};
 
+		$scope.showCategories = function(event) {
+			$scope.data.showEvent = event;
+			$scope.eventView = "partials/eventCategories.html";
+		};
+
 		$scope.showList = function() {
 			$scope.eventView = "partials/listEvents.html";
 			$rootScope.eventToBeAdded = null;
+		};
+
+		$scope.changeCategories = function(category) {
+			// set an active category so that it can be used for paging
+			$scope.activeCategory = category;
+
+			var page = 1,
+				start = $scope.startDate,
+				end = $scope.endDate;
+
+			$rootScope.findEvents = eventfulServices.findEvents(start, end, page, category);
+			$scope.eventView = "partials/listEvents.html";
+		};
+
+		$scope.eventPage = function(pageNumber) {
+
+			var page = pageNumber,
+				start = $scope.startDate,
+				end = $scope.endDate,
+				category = $scope.activeCategory ? $scope.activeCategory : "";
+
+			$rootScope.findEvents = eventfulServices.findEvents(start, end, page, category);
 		};
 
 		$rootScope.eventAdd = function() {
@@ -33,7 +60,6 @@ angular.module("boomCal")
 				method: "GET"
 			})
 				.success(function(data) {
-					console.log(data);
 					$scope.eventCategories = data;
 				});
 

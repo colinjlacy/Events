@@ -1,21 +1,27 @@
 angular.module("eventfulServices", [])
-	.factory("eventfulServices", function($http) {
+	.factory("eventfulServices", function($http, $rootScope) {
 		return {
 			findEvents: function(start, end, page, category) {
 
+				// TODO: this probably needs to be reworked, and maybe even saved in a different controller/service (or have the two controllers combined)
+
 				var listOfEvents = [];
 
-				// get the current date, which will be the minimum value of the initial event request
-				var date = start ? start : new Date(),
-					now = date.toISOString().slice(0,10), // revert the current date to an ISO string
+				// this next part does a whole lotta things:
+				//  1. grabs the current date
+				//  2. creates a terniary to determine if the value passed to the start argument was in ISO
+				//      a. if it is, then the now value is saved as that ISOString
+				//      b. if not, then it assumes no value was passed, and uses the current date by converting to ISOString
+				//  3. applies the same logic tot he future date
+				//      a. if the future date is in ISO, then it passes and is used
+				//      b. if not then a date is created by using the current date and adding 30 days, thereby assuming that no proper fdate was ever given
+				//  4. sets a page variable based on whether or not an actual page number was passed; if not, sets it to 1
+				var date = new Date(),
+					now = /^(\d{4}\-\d\d\-\d\d)$/.test(start) ? start : date.toISOString().slice(0,10),
+					future = /^(\d{4}\-\d\d\-\d\d)$/.test(end) ? end : (date.addDays(30)).toISOString().slice(0,10),
 					page = page ? page : 1;
 
-				// get a date 30 days in the future
-				var future = end ? end : date.addDays(30);
-				future = future.toISOString().slice(0,10); // revert the future date to an ISO string
-
 				// reformat dates for the eventful API
-
 				var reformat = function(date) {
 					var split = date.split("-");
 					var newdate = split.join("");
@@ -31,7 +37,7 @@ angular.module("eventfulServices", [])
 				var queryParams = {
 					date_start: now + "00",
 					date_stop: future + "00",
-					page_size: page,
+					page: page,
 					category: category
 				};
 
@@ -43,6 +49,9 @@ angular.module("eventfulServices", [])
 				}).success(function(data) {
 
 						console.log(data);
+
+						$rootScope.eventPageCount = parseInt(data.page_count);
+						$rootScope.eventPageNumber = parseInt(data.page_number);
 
 						for (var i = 0; i < data.events.event.length; i++) {
 
