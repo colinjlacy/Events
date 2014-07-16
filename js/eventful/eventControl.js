@@ -35,8 +35,8 @@ angular.module("boomCal")
 		$scope.eventPage = function(pageNumber) {
 
 			var page = pageNumber,
-				start = $scope.startDate,
-				end = $scope.endDate,
+				start = $rootScope.startDate,
+				end = $rootScope.endDate,
 				category = $scope.activeCategory ? $scope.activeCategory : "";
 
 			$rootScope.findEvents = eventfulServices.findEvents(start, end, page, category);

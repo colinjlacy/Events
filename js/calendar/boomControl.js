@@ -136,9 +136,17 @@ angular.module("boomCal")
 		};
 
 		$scope.reviseDates = function() {
+
+			// TODO: this should be cleaned up.  I'm pulling data twice and I don't like it.
+			$rootScope.startDate = $scope.startDate;
+			$rootScope.endDate = $scope.endDate;
+
 			var token = $scope.token,
 				start = $scope.startDate,
 				end = $scope.endDate;
+
+			console.log(start);
+			console.log(end);
 
 			$scope.data = eventDisplay.listEventsOnLoad(token, start, end);
 			$rootScope.findEvents = eventfulServices.findEvents(start, end);

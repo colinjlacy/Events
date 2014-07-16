@@ -17,9 +17,12 @@ angular.module("eventfulServices", [])
 				//      b. if not then a date is created by using the current date and adding 30 days, thereby assuming that no proper fdate was ever given
 				//  4. sets a page variable based on whether or not an actual page number was passed; if not, sets it to 1
 				var date = new Date(),
-					now = /^(\d{4}\-\d\d\-\d\d)$/.test(start) ? start : date.toISOString().slice(0,10),
-					future = /^(\d{4}\-\d\d\-\d\d)$/.test(end) ? end : (date.addDays(30)).toISOString().slice(0,10),
+					now = start ? start : date.toISOString().slice(0,10),
+					future = end ? end : (date.addDays(30)).toISOString().slice(0,10),
 					page = page ? page : 1;
+
+				now = /^(\d{4}\-\d\d\-\d\d)$/.test(now) ? now : now.toISOString().slice(0,10);
+				future = /^(\d{4}\-\d\d\-\d\d)$/.test(future) ? future : future.toISOString().slice(0,10);
 
 				// reformat dates for the eventful API
 				var reformat = function(date) {
