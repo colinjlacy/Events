@@ -1,7 +1,7 @@
 <button class="btn btn-default" ng-click="showList()">Back to List</button>
 
 <ul class="list-group">
-	<li class="list-group-item" ng-repeat="category in eventCategories.category track by $index" ng-click="changeCategories(category.id)">
+	<li class="list-group-item" ng-repeat="category in eventCategories.category track by $index" ng-click="changeCategories(category)">
 		{{category.name}}
 	</li>
 </ul>

@@ -21,12 +21,13 @@ angular.module("boomCal")
 		};
 
 		$scope.changeCategories = function(category) {
-			// set an active category so that it can be used for paging
+			// set an active category so that it can be used for paging and display
 			$scope.activeCategory = category;
 
 			var page = 1,
 				start = $scope.startDate,
-				end = $scope.endDate;
+				end = $scope.endDate,
+				category = category.id;
 
 			$rootScope.findEvents = eventfulServices.findEvents(start, end, page, category);
 			$scope.eventView = "partials/listEvents.html";
