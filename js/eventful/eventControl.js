@@ -1,5 +1,5 @@
 angular.module("boomCal")
-	.controller('eventControl', function ($scope, $rootScope, $http, eventfulServices) {
+	.controller('eventControl', function ($scope, $rootScope, $http, $sce, eventfulServices) {
 
 		var token = $scope.token;
 
@@ -61,6 +61,11 @@ angular.module("boomCal")
 				method: "GET"
 			})
 				.success(function(data) {
+					// TODO: Figure out why ngSanitize isn't working - had to do a slit/join to replace the HTML &amp; character
+					for (var i = 0; i < data.category.length; i++) {
+						data.category[i].name = data.category[i].name.split("&amp;").join("&");
+						console.log(data.category[i].name);
+					}
 					$scope.eventCategories = data;
 				});
 

@@ -3,7 +3,8 @@ angular.module('boomCal', [
 		'ui.bootstrap',
 		'eventDisplay',
 		'eventfulServices',
-		'ngRoute'
+		'ngRoute',
+		'ngSanitize'
 	])
 	.config(['$routeProvider', function($routeProvider) {
 		$routeProvider.when("/", {
@@ -33,7 +34,12 @@ angular.module('boomCal', [
 		$routeProvider.otherwise({
 			redirectTo: "/"
 		});
-	}]);
+	}])
+	.filter('unsafe', function($sce) {
+		return function(val) {
+			return $sce.trustAsHtml(val);
+		};
+	});
 
 
 Date.prototype.addDays = function(days)
