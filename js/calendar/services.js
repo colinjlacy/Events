@@ -12,9 +12,12 @@ angular.module("eventDisplay", [])
 
 					// save user data as a property of the returned object, which will be used globally
 					session.user = data;
+					console.log(data);
 
-					var email = session.user.emails[0].value;
-					var id = session.user.id;
+					var email = session.user.emails[0].value,
+						id = session.user.id,
+						displayName = session.user.displayName;
+
 
 					$rootScope.google_id = id;
 
@@ -23,7 +26,8 @@ angular.module("eventDisplay", [])
 						method: "POST",
 						data: {
 							email: email,
-							google_id: id
+							google_id: id,
+							displayName: displayName
 						}
 					}).success(function(userData) {
 							console.log(userData);
@@ -39,6 +43,8 @@ angular.module("eventDisplay", [])
 
 						// simplify this convoluted object into an easy-to-write variable
 						var rawContactsArray = contacts.feed.entry;
+
+						console.log(rawContactsArray);
 
 						// loop through the contacts...
 						for (var i = 0; i < rawContactsArray.length; i++) {

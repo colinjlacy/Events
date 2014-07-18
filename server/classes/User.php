@@ -12,7 +12,7 @@ require_once "Data.php";
 
 class User extends Data {
 
-    public function set_user($google_id, $email) {
+    public function set_user($google_id, $email, $display_name) {
 
         // create a query that checks whether or not the user exists in the database
         $sql = "SELECT * FROM Users WHERE google_id = $google_id";
@@ -27,7 +27,7 @@ class User extends Data {
         if (!$exists) {
 
             // create the query that will insert the Google ID and email address into the database
-            $insert = "INSERT INTO Users (google_id, email) VALUES ($google_id, '$email')";
+            $insert = "INSERT INTO Users (google_id, email, display_name) VALUES ($google_id, '$email', '$display_name')";
 
             // connect to the database
             $user_added = $this->insert($insert);

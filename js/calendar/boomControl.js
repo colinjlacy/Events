@@ -10,7 +10,7 @@ angular.module("boomCal")
 			$scope.token = token;
 
 			// call the method that displays the first 30 events from the primary calendar
-			$scope.data = eventDisplay.listEventsOnLoad(token);
+			$rootScope.data = eventDisplay.listEventsOnLoad(token);
 
 			$scope.cals = eventDisplay.listCalendars(token);
 

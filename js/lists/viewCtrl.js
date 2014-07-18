@@ -137,6 +137,11 @@ angular.module("boomCal")
 			$scope.emailForm = true;
 		};
 
+		$scope.showShareForm = function() {
+			// set the calendarForm property to true so that the form will display and the list will be hidden
+			$scope.shareForm = true;
+		};
+
 		$scope.addToCalAttendees = function() {
 			if (!($scope.listAttendees && $scope.listAttendees.length > 0)) {
 				$scope.listAttendees = [];
@@ -151,6 +156,33 @@ angular.module("boomCal")
 			}
 			$scope.listRecipients.push($scope.recipient);
 			$scope.recipient = undefined;
+		};
+
+		$scope.addToShare = function() {
+			if (!($scope.listShare && $scope.listShare.length > 0)) {
+				$scope.listShare = [];
+			}
+			$scope.listShare.push($scope.recipient.email);
+			$scope.recipient = undefined;
+		};
+
+		$scope.shareList = function() {
+			var postData = {
+				list_id: $routeParams.id,
+				message: $scope.shareMessage,
+				listShare: $scope.listShare,
+				creator_id: $rootScope.data.user.id,
+				creator_display: $rootScope.data.user.displayName
+			};
+
+			$http({
+				url: "server/share_list.php",
+				method: "POST",
+				data: postData
+			})
+				.success(function(data) {
+					console.log("it worked! " + data);
+				})
 		};
 
 		$scope.addToCalendar = function() {
