@@ -1,7 +1,7 @@
 angular.module("eventfulServices", [])
 	.factory("eventfulServices", function($http, $rootScope) {
 		return {
-			findEvents: function(start, end, page, category) {
+			findEvents: function(start, end, page, category, sort) {
 
 				// TODO: this probably needs to be reworked, and maybe even saved in a different controller/service (or have the two controllers combined)
 
@@ -14,12 +14,14 @@ angular.module("eventfulServices", [])
 				//      b. if not, then it assumes no value was passed, and uses the current date by converting to ISOString
 				//  3. applies the same logic tot he future date
 				//      a. if the future date is in ISO, then it passes and is used
-				//      b. if not then a date is created by using the current date and adding 30 days, thereby assuming that no proper fdate was ever given
+				//      b. if not then a date is created by using the current date and adding 30 days, thereby assuming that no proper date was ever given
 				//  4. sets a page variable based on whether or not an actual page number was passed; if not, sets it to 1
+                //  5. sets a sort order, or if none was given, sets it to "popularity".  That might change.
 				var date = new Date(),
 					now = start ? start : date.toISOString().slice(0,10),
 					future = end ? end : (date.addDays(30)).toISOString().slice(0,10),
-					page = page ? page : 1;
+					page = page ? page : 1,
+                    sort = sort ? sort : "popularity";
 
 				now = /^(\d{4}\-\d\d\-\d\d)$/.test(now) ? now : now.toISOString().slice(0,10);
 				future = /^(\d{4}\-\d\d\-\d\d)$/.test(future) ? future : future.toISOString().slice(0,10);
@@ -41,7 +43,8 @@ angular.module("eventfulServices", [])
 					date_start: now + "00",
 					date_stop: future + "00",
 					page: page,
-					category: category
+					category: category,
+                    sort: sort
 				};
 
 				$http({

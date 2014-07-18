@@ -23,19 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="eventControl.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/eventful/eventControl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="8" selection-start="2687" selection-end="2687" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="1650">
+            <state line="26" column="25" selection-start="773" selection-end="773" vertical-scroll-proportion="0.48447204" vertical-offset="0" max-vertical-offset="1380">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create_list.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/create_list.php">
+      <file leaf-file-name="eventful-services.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/eventful/eventful-services.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="0" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="345">
+            <state line="12" column="4" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2055">
               <folding />
             </state>
           </provider>
@@ -53,7 +53,25 @@
       <file leaf-file-name="send_mail.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/send_mail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="0" selection-start="985" selection-end="985" vertical-scroll-proportion="0.0" vertical-offset="73" max-vertical-offset="900">
+            <state line="44" column="0" selection-start="985" selection-end="985" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="900">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="call.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/call.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="11" selection-start="602" selection-end="602" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="360">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listEvents.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partials/listEvents.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="-0.0" vertical-offset="15" max-vertical-offset="420">
               <folding />
             </state>
           </provider>
@@ -71,25 +89,16 @@
       <file leaf-file-name="get_showtimes.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/get_showtimes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="50" selection-end="356" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="255">
+            <state line="11" column="0" selection-start="50" selection-end="356" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="call.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/call.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="16" selection-start="0" selection-end="609" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="345">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="event_categories.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="event_categories.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/event_categories.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="29" selection-start="369" selection-end="369" vertical-scroll-proportion="0.19206145" vertical-offset="0" max-vertical-offset="781">
+            <state line="11" column="0" selection-start="372" selection-end="372" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
@@ -99,15 +108,6 @@
         <entry file="file://$PROJECT_DIR$/server/edit_list.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="26" column="1" selection-start="0" selection-end="668" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="480">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/app/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="8" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="750">
               <folding />
             </state>
           </provider>
@@ -141,6 +141,9 @@
         <option value="$PROJECT_DIR$/server/get_movies.php" />
         <option value="$PROJECT_DIR$/server/get_showtimes.php" />
         <option value="$PROJECT_DIR$/server/event_categories.php" />
+        <option value="$PROJECT_DIR$/js/eventful/eventful-services.js" />
+        <option value="$PROJECT_DIR$/server/call.php" />
+        <option value="$PROJECT_DIR$/js/eventful/eventControl.js" />
       </list>
     </option>
   </component>
@@ -151,8 +154,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2016" />
-    <option name="y" value="136" />
+    <option name="x" value="2010" />
+    <option name="y" value="125" />
     <option name="width" value="1528" />
     <option name="height" value="948" />
   </component>
@@ -182,7 +185,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -215,8 +217,73 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soundcloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soundcloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soundcloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="soundcloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventful" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -262,6 +329,10 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <browser start="false" url="" with-js-debugger="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="GoTestConfiguration" factoryName="Go Test">
       <option name="name" value="Go Test" />
       <option name="saveOutputToFile" value="false" />
@@ -281,10 +352,6 @@
       <option name="testBeforeBenchmark" value="false" />
       <option name="goVetEnabled" value="false" />
       <module name="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
-      <browser start="false" url="" with-js-debugger="false" />
       <method />
     </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="4308dfe1-d94a-46e3-86e0-1c1f25ac9756" server_name="LocalHost">
@@ -308,7 +375,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2016" y="136" width="1528" height="948" extended-state="0" />
+    <frame x="2010" y="125" width="1528" height="948" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -344,28 +411,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/classes/Data.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="5" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="975" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="11" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/retrieve_lists.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="12" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/retrieve_list_items.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="12" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/calendar/boomControl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2400" />
@@ -405,7 +450,16 @@
     <entry file="file://$PROJECT_DIR$/server/classes/Lists.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="109" column="54" selection-start="2889" selection-end="2889" vertical-scroll-proportion="0.0" vertical-offset="1635" max-vertical-offset="2310">
-          <folding />
+          <folding>
+            <marker date="1404928083000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Lists..." />
+            <marker date="1404928083000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Lists..." />
+            <marker date="1404928083000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..List_Items..." />
+            <marker date="1404928083000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1404928083000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1404928083000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1404928083000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1404928083000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -460,7 +514,16 @@
     <entry file="file://$PROJECT_DIR$/server/classes/Lists.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="129" column="33" selection-start="3488" selection-end="3488" vertical-scroll-proportion="0.0" vertical-offset="1935" max-vertical-offset="2310">
-          <folding />
+          <folding>
+            <marker date="1404928083000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Lists..." />
+            <marker date="1404928083000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Lists..." />
+            <marker date="1404928083000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..List_Items..." />
+            <marker date="1404928083000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1404928083000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1404928083000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1404928083000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1404928083000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -559,7 +622,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="8" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="750">
+        <state line="39" column="8" selection-start="999" selection-end="999" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="840">
           <folding />
         </state>
       </provider>
@@ -571,7 +634,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="8" selection-start="2687" selection-end="2687" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="1650">
+        <state line="68" column="8" selection-start="2760" selection-end="2760" vertical-scroll-proportion="0.0" vertical-offset="559" max-vertical-offset="1665">
           <folding />
         </state>
       </provider>
@@ -584,16 +647,6 @@
     <entry file="file://$PROJECT_DIR$/server/set_user.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="16" selection-start="314" selection-end="314" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="270" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/retrieve_lists.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="0" selection-end="42" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="255" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/retrieve_list_items.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="12" selection-start="222" selection-end="222" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="255" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/create_list.php">
@@ -613,13 +666,6 @@
     <entry file="file://$PROJECT_DIR$/server/edit_list.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="1" selection-start="0" selection-end="668" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="480">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/classes/Lists.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="189" column="24" selection-start="4857" selection-end="4857" vertical-scroll-proportion="0.0" vertical-offset="2835" max-vertical-offset="3675">
           <folding />
         </state>
       </provider>
@@ -645,23 +691,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/call.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="16" selection-start="0" selection-end="609" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="345">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/get_showtimes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="50" selection-end="356" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="255">
+        <state line="11" column="0" selection-start="50" selection-end="356" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/event_categories.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="29" selection-start="369" selection-end="369" vertical-scroll-proportion="0.19206145" vertical-offset="0" max-vertical-offset="781">
+        <state line="11" column="0" selection-start="372" selection-end="372" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/retrieve_lists.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="12" selection-start="224" selection-end="224" vertical-scroll-proportion="0.21072797" vertical-offset="0" max-vertical-offset="783">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/retrieve_list_items.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="12" selection-start="222" selection-end="222" vertical-scroll-proportion="0.21072797" vertical-offset="0" max-vertical-offset="783">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lists/viewCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="44" selection-start="665" selection-end="665" vertical-scroll-proportion="0.37783375" vertical-offset="15" max-vertical-offset="3720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/classes/Lists.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="189" column="24" selection-start="4857" selection-end="4857" vertical-scroll-proportion="-90.625" vertical-offset="585" max-vertical-offset="3600">
+          <folding>
+            <marker date="1404928083000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Lists..." />
+            <marker date="1404928083000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Lists..." />
+            <marker date="1404928083000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..List_Items..." />
+            <marker date="1404928083000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1404928083000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1404928083000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1404928083000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1404928083000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/listEvents.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="-0.0" vertical-offset="15" max-vertical-offset="420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/call.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="11" selection-start="602" selection-end="602" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/eventful/eventful-services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="4" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2055">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/eventful/eventControl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="25" selection-start="773" selection-end="773" vertical-scroll-proportion="0.48447204" vertical-offset="0" max-vertical-offset="1380">
           <folding />
         </state>
       </provider>

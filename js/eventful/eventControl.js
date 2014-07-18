@@ -27,20 +27,31 @@ angular.module("boomCal")
 			var page = 1,
 				start = $scope.startDate,
 				end = $scope.endDate,
-				category = category.id;
+                sort = $scope.sortOrder;
 
-			$rootScope.findEvents = eventfulServices.findEvents(start, end, page, category);
+			$rootScope.findEvents = eventfulServices.findEvents(start, end, page, category.id, sort);
 			$scope.eventView = "partials/listEvents.html";
 		};
 
+        $scope.sortEvents = function(sortOrder) {
+            $scope.sortOrder = sortOrder;
+
+            var start = $rootScope.startDate,
+                end = $rootScope.endDate,
+                page = 1,
+                category = $scope.activeCategory ? $scope.activeCategory.id : "";
+
+            $rootScope.findEvents = eventfulServices.findEvents(start, end, page, category, sortOrder);
+        };
+
 		$scope.eventPage = function(pageNumber) {
 
-			var page = pageNumber,
-				start = $rootScope.startDate,
+			var start = $rootScope.startDate,
 				end = $rootScope.endDate,
-				category = $scope.activeCategory ? $scope.activeCategory : "";
+				category = $scope.activeCategory ? $scope.activeCategory.id : "",
+                sort = $scope.sortOrder ? $scope.sortOrder : "popularity";
 
-			$rootScope.findEvents = eventfulServices.findEvents(start, end, page, category);
+			$rootScope.findEvents = eventfulServices.findEvents(start, end, pageNumber, category, sort);
 		};
 
 		$rootScope.eventAdd = function() {
