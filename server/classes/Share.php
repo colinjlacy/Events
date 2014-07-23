@@ -24,11 +24,11 @@ class Share extends Data {
         // if the result of the string is false
         if (!$exists) {
 
-            return "Doesn't";
+            return false;
 
         } else {
 
-            return "Does";
+            return $exists;
 
         }
 
@@ -36,7 +36,7 @@ class Share extends Data {
 
     public function set_holding($email, $list, $creator_id, $creator_display) {
 
-        $insert = "INSERT INTO Sharing (list_id, creator_id, creator_display, email) VALUES ($list, $creator_id, '$creator_display', '$email')";
+        $insert = "INSERT INTO Sharing (list_id, creator_id, creator_display, email) VALUES ($list, '$creator_id', '$creator_display', '$email')";
 
         // connect to the database
         $share_added = $this->insert($insert);
@@ -52,7 +52,7 @@ class Share extends Data {
 
     }
 
-    public function add_to_share_list($id, $shared_lists, $list) {
+    public function add_to_share_list($email, $shared_lists, $list) {
 
         if ($shared_lists != null) {
             $lists = unserialize($shared_lists);
@@ -64,7 +64,7 @@ class Share extends Data {
 
         $updated_lists = serialize($lists);
 
-        $update = "UPDATE Users SET edit_access = '$updated_lists' WHERE id = $id";
+        $update = "UPDATE Users SET edit_access = '$updated_lists' WHERE email = '$email'";
 
         $share_update = $this->update($update);
 
