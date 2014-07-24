@@ -103,7 +103,19 @@ angular.module("boomCal")
 			}
 			$scope.attendees.push($scope.attendee);
 			$scope.attendee = undefined;
-		}
+		};
+
+		$scope.userLogout = function() {
+			$http({
+				url: 'https://accounts.google.com/o/oauth2/revoke?token=' + $scope.token,
+				method: "GET",
+				contentType: "application/json",
+				dataType: 'jsonp'
+			})
+				.success(function() {
+					location.reload();
+				});
+		};
 
 		var date = new Date();
 

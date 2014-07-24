@@ -64,7 +64,7 @@
       <file leaf-file-name="User.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/classes/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="13" selection-start="2981" selection-end="2981" vertical-scroll-proportion="2.0895522" vertical-offset="0" max-vertical-offset="1860">
+            <state line="117" column="13" selection-start="2981" selection-end="2981" vertical-scroll-proportion="0.7761194" vertical-offset="1056" max-vertical-offset="1860">
               <folding>
                 <marker date="1406234377000" expanded="true" signature="334:382" placeholder="SELECT * FRO..Users..." />
                 <marker date="1406234377000" expanded="true" signature="783:880" placeholder="INSERT INTO ..." />
@@ -732,7 +732,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/classes/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="13" selection-start="2981" selection-end="2981" vertical-scroll-proportion="2.0895522" vertical-offset="0" max-vertical-offset="1860">
+        <state line="117" column="13" selection-start="2981" selection-end="2981" vertical-scroll-proportion="0.7761194" vertical-offset="1056" max-vertical-offset="1860">
           <folding>
             <marker date="1406234377000" expanded="true" signature="334:382" placeholder="SELECT * FRO..Users..." />
             <marker date="1406234377000" expanded="true" signature="783:880" placeholder="INSERT INTO ..." />
