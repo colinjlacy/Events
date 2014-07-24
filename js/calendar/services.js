@@ -12,7 +12,7 @@ angular.module("eventDisplay", [])
 
 					// save user data as a property of the returned object, which will be used globally
 					session.user = data;
-					console.log(data);
+//					console.log(data);
 
 					var email = session.user.emails[0].value,
 						id = session.user.id,
@@ -44,7 +44,7 @@ angular.module("eventDisplay", [])
 						// simplify this convoluted object into an easy-to-write variable
 						var rawContactsArray = contacts.feed.entry;
 
-						console.log(rawContactsArray);
+//						console.log(rawContactsArray);
 
 						// loop through the contacts...
 						for (var i = 0; i < rawContactsArray.length; i++) {

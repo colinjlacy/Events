@@ -34,17 +34,88 @@ class User extends Data {
 
             // if that worked
             if ($user_added) {
-                // you're done here
-                return "User added!";
+
+                // get the lists shared with them from the holding database
+                $add_shared_lists = $this->get_shared_lists($email, $user_added);
+
+                if ($add_shared_lists) {
+
+                    // you're done here
+                    return true;
+
+                } else {
+
+                    // let them know something went wrong
+                    return false;
+
+                }
+
+
             } else {
+
                 // if not, let someone know
                 return "something went wrong while inserting the user into the database";
+
             }
 
         } else {
 
             // you're done here
             return "User data retrieved! Google ID:" . $exists['google_id'] . "; Email: " . $exists['email'];
+
+        }
+
+    }
+
+    private function get_shared_lists($email, $id) {
+
+        $select = "SELECT * FROM Shared WHERE email = '$email'";
+
+        $get_shared = $this->select($select);
+
+        if (!$get_shared) {
+
+            return "Something went terribly wrong";
+
+        } else {
+
+            $sharedListArray = [];
+
+            // loop through each row in the returned object
+            while($row = $get_shared -> fetch_assoc()) {
+
+                // and insert it into the blank array
+                $sharedListArray[] = $row['list_id'];
+
+            }
+
+            $serializedSharedListArray = serialize($sharedListArray);
+
+            $update = "UPDATE Users SET edit_access = '$serializedSharedListArray' WHERE email = '$email' and id = $id";
+
+            $insert_shared = $this->update($update);
+
+            if ($insert_shared) {
+
+                $delete = "DELETE FROM Shared WHERE email = '$email'";
+
+                $deleted_holding = $this->select($delete);
+
+                if ($deleted_holding) {
+
+                    return true;
+
+                } else {
+
+                    return false;
+
+                }
+
+            } else {
+
+                return false;
+
+            }
 
         }
 

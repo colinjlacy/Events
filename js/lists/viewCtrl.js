@@ -181,7 +181,7 @@ angular.module("boomCal")
 				data: postData
 			})
 				.success(function(data) {
-					console.log("it worked! " + data);
+					console.log("it worked: " + data);
 				})
 		};
 
@@ -268,6 +268,7 @@ angular.module("boomCal")
 		$scope.viewReset = function() {
 			$scope.calendarForm = false;
 			$scope.emailForm = false;
+			$scope.shareForm = false;
 		}
 
 

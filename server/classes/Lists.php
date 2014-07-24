@@ -41,15 +41,87 @@ class Lists extends Data {
             }
 
             // then return a json_encoded version of the data to the app
-            return json_encode($dataToBeEncoded);
+            return $dataToBeEncoded;
 
+        }
+
+    }
+
+    public function get_shared_lists($google_id) {
+
+        // create a query that retrieves the User's info from the database
+        $sql = "SELECT * FROM Users WHERE google_id = $google_id";
+
+        // execute the query and save the returned User object
+        $user = $this->select($sql);
+
+        // if no returned object
+        if(!$user) {
+
+            // let somebody know
+            die('Could not retrieve user data');
+
+        // if there is a returned object
+        } else {
+
+            // create a blank array which will store the shared lists
+            $dataToBeEncoded = array();
+
+            // store the value of the unserialized shared list array
+            $user_info = mysqli_fetch_assoc($user);
+            $shared_lists = unserialize($user_info['edit_access']);
+
+//            return $shared_lists;
+
+            // loop through the share list IDs
+            foreach($shared_lists as $list_id) {
+
+                // run the database search for the current list
+                $list = $this->simple_list_select($list_id);
+
+                if ($list != null) {
+
+                    // add the current list to the array that will be returned
+                    array_push($dataToBeEncoded, $list);
+
+                }
+
+            }
+
+            // then return a json_encoded version of the data to the app
+            return $dataToBeEncoded;
+
+        }
+
+    }
+
+    private function simple_list_select($id) {
+
+        // write the database search inquiry
+        $select = "SELECT * FROM Lists WHERE id = '$id'";
+
+        // search the database for this list
+        $result = $this->select($select);
+
+        if (!$result) {
+
+            // if no connection made, let someone know
+            return "Could not access list bia simple select";
+
+        } else {
+
+            // else save the associative array of the result
+            $row = mysqli_fetch_assoc($result);
+
+            // and return it
+            return $row;
         }
 
     }
 
     public function check_id($google_id, $list_id) {
 
-        $exists = "SELECT * FROM Lists WHERE id = $list_id AND google_id = '$google_id'";
+        $exists = "SELECT 1 FROM Lists WHERE id = $list_id AND google_id = '$google_id'";
 
         $exists_query = $this->select($exists);
 

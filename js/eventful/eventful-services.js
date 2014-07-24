@@ -54,7 +54,7 @@ angular.module("eventfulServices", [])
 					params: queryParams
 				}).success(function(data) {
 
-						console.log(data);
+//						console.log(data);
 
 						$rootScope.eventPageCount = parseInt(data.page_count);
 						$rootScope.eventPageNumber = parseInt(data.page_number);
@@ -80,7 +80,7 @@ angular.module("eventfulServices", [])
 							// arrange for a bulk datalist that can be spit out as a long list
 							listOfEvents.push(data.events.event[i]);
 
-							console.log(data.events.event[i]);
+//							console.log(data.events.event[i]);
 
 						}
 					});

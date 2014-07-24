@@ -11,8 +11,9 @@ angular.module("boomCal")
 	        })
                 .success(function(response) {
                     $scope.lists = response;
+		            console.log(response);
 
-                    if(response.length > 0) {
+                    if(response.owned.length > 0) {
                         $scope.hasLists = true;
                     }
 
@@ -40,8 +41,8 @@ angular.module("boomCal")
                 }
             })
                 .success(function(data) {
-                    $scope.lists.splice(index, 1);
-                    if ($scope.lists.length == 0) {
+                    $scope.lists.owned.splice(index, 1);
+                    if ($scope.lists.owned.length == 0) {
                         $scope.hasLists = false;
                     }
                 });
@@ -76,11 +77,11 @@ angular.module("boomCal")
                 data: add
             })
                 .success(function(data) {
-                    console.log(data);
+//                    console.log(data);
                     if(!isNaN(data)) {
                         $scope.add.error = null;
                         add.id = data;
-                        $scope.lists.push(add);
+                        $scope.lists.owned.push(add);
                         $scope.hasLists = true;
                         $scope.add = {};
                         $location.path('#/lists/');

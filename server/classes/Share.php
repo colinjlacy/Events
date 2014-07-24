@@ -36,7 +36,7 @@ class Share extends Data {
 
     public function set_holding($email, $list, $creator_id, $creator_display) {
 
-        $insert = "INSERT INTO Sharing (list_id, creator_id, creator_display, email) VALUES ($list, '$creator_id', '$creator_display', '$email')";
+        $insert = "INSERT INTO Sharing (list_id, created_by_id, created_by_display, email) VALUES ('$list', '$creator_id', '$creator_display', '$email')";
 
         // connect to the database
         $share_added = $this->insert($insert);
@@ -44,10 +44,10 @@ class Share extends Data {
         // if that worked
         if ($share_added) {
             // you're done here
-            return "Share was successful!";
+            return "Share was successful;" . "list_id: ".$list."; email: ".$email."; creator_id: ".$creator_id."; creator_display: ".$creator_display;
         } else {
             // if not, let someone know
-            return "something went wrong while attempting to share with that user";
+            return "something went wrong while attempting to share with that user;" . "list_id: ".$list."; email: ".$email."; creator_id: ".$creator_id."; creator_display: ".$creator_display;
         }
 
     }
@@ -55,12 +55,26 @@ class Share extends Data {
     public function add_to_share_list($email, $shared_lists, $list) {
 
         if ($shared_lists != null) {
+
             $lists = unserialize($shared_lists);
+
         } else {
+
             $lists = [];
+
         }
 
-        array_push($lists, $list);
+        $does_not_match = true;
+
+        for($i = 0; $i < count($lists); $i++) {
+            if ($lists[$i] == $list) {
+                $does_not_match = false;
+            }
+        }
+
+        if($does_not_match) {
+            array_push($lists, $list);
+        }
 
         $updated_lists = serialize($lists);
 
